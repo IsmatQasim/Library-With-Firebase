@@ -1,0 +1,110 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10%;
+}
+.navbar-nav{
+    margin-left: 50%;
+}
+.navbar{
+    background-color: white;
+    padding: 0  !important;
+}
+.navbar-brand img{
+    /* height: ; */
+    padding-left: 10px;
+}
+.navbar-nav li{
+    padding: 0 10px;
+} 
+.navbar-nav li a{
+    color: rgb(0, 0, 0) !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+.fa-bars{
+    color: #fff;
+    font-size: 30px !important;
+}
+.navbar-toggler{
+    outline:none !important;
+}
+/* -------------------------banner section---------------------- */
+ #banner{
+    color: #fff;
+    background-image:linear-gradient( rgb(68, 99, 200),rgb(21, 21, 129));
+    padding-top: 5%;
+ }
+.promo-title{
+    font-size: 50px;
+    font-weight: 700;
+    margin-top:100px ;
+    margin-bottom: 20px;
+    word-spacing: 5px;
+    line-height: 60px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:typing 2s steps(29),
+            cursor .3s step-end infinite alternate;
+}
+@keyframes cursor{
+    50%{border-color:transparent}
+}
+@keyframes typing{
+    from{width :0}
+}
+
+.bottom-img{
+    margin-top: 0;
+    width: 100%;
+} 
+.navbar-nav button{
+    padding: 5px;
+    border-radius: 8px;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+}
+.navbar-nav button:hover{
+    background-color: #fff;
+}
+#banner p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+}
+.main-btn{
+    padding: 8px;
+    border-radius: 8px;
+    border: 0;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.main-btn:hover{
+    background-color: grey;
+}
+.side-img{
+    margin-top: 0;
+}
+@media only screen and (max-width: 768px) {
+    .promo-title{
+        font-size: 40px;
+        word-wrap: break-word;
+    }
+    #banner p{
+        font-size: 20px;
+        word-wrap: break-word;
+    }
+
+  }
