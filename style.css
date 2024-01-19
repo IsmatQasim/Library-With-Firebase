@@ -152,6 +152,11 @@
     border-radius: 20px;
     background: grey;
 }
+.book-img{
+    width: 130px;
+    margin:0 10px ;
+    height: 120px;
+}
 /* -------------------------about us section---------------------- */
 #about-us{
     background: #f8f9fa;
