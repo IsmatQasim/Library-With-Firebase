@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: monospace;
 
 }
 #nav-bar{
@@ -12,23 +13,32 @@
 }
 .navbar-nav{
     margin-left: 50%;
+    padding: 13px;
 }
 .navbar{
-    background-color: white;
+    background-color: rgb(187, 187, 187);
     padding: 0  !important;
+    color: #000000;
 }
 .navbar-brand img{
-    /* height: ; */
-    padding-left: 10px;
+    width: 90px;
+    padding-left: 5px;
 }
 .navbar-nav li{
     padding: 0 10px;
 } 
 .navbar-nav li a{
-    color: rgb(0, 0, 0) !important;
-    font-weight: 600;
+    color: rgb(14, 14, 14) !important;
+    font-weight: 500;
+    font-size: 18px;
     float: right;
     text-align: left;
+}
+.navbar-nav li a:hover{
+
+    text-decoration: underline 2px #dfdede;
+    transition: all ease-out 1s;
+
 }
 .fa-bars{
     color: #fff;
@@ -40,12 +50,13 @@
 /* -------------------------banner section---------------------- */
  #banner{
     color: #fff;
-    background-image:linear-gradient( rgb(68, 99, 200),rgb(21, 21, 129));
+    background-color: rgb(187, 187, 187);
     padding-top: 5%;
  }
 .promo-title{
-    font-size: 50px;
-    font-weight: 700;
+    font-size: 43px;
+    letter-spacing: 5px;
+    font-weight: 650;
     margin-top:100px ;
     margin-bottom: 20px;
     word-spacing: 5px;
@@ -55,6 +66,7 @@
     overflow: hidden;
     animation:typing 2s steps(29),
             cursor .3s step-end infinite alternate;
+    color: black;
 }
 @keyframes cursor{
     50%{border-color:transparent}
@@ -76,20 +88,23 @@
     font-weight: 500;
 }
 .navbar-nav button:hover{
-    background-color: #fff;
+    background-color: grey;
 }
 #banner p {
-    color: #fff;
+    color: #000000;
     font-size: 20px;
     font-weight: 400;
     font-style: italic;
-}
+    margin-bottom: 0;}
+
 .main-btn{
     padding: 8px;
     border-radius: 8px;
     border: 0;
-    margin-top: 10px;
+    margin-top: 30px;
     font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 3px;
 }
 .main-btn:hover{
     background-color: grey;
@@ -97,14 +112,151 @@
 .side-img{
     margin-top: 0;
 }
+/* -------------------------services section---------------------- */
+
+#services{
+    padding: 80px 0;
+}
+.service-img{
+    width: 100px ;
+    margin-top: 20px;
+}
+.services{
+    padding: 20px;
+}
+.services h4{
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+.services p{
+    font-size: 18px;
+    font-style: italic;
+}
+.title::before{
+    content: '';
+    background: grey;
+    height: 3px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+#services .btn-primary{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background: grey;
+}
+/* -------------------------about us section---------------------- */
+#about-us{
+    background: #f8f9fa;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    }
+    .about-title{
+        font-size: 40px;
+        font-weight: 600;
+        margin-top: 8%; 
+    }
+    #about-us ul li{
+        margin: 10px 0;
+        font-size: 18px;
+        font-style:italic ;
+    }
+    #about-us ul{
+        margin-left: 20px;
+    }
+    .img-lib{
+        width: 75%;
+        height: 70%;
+        margin-top: 30px;
+        margin-left: 70px;
+    }
+    /*----------------social-media---------------*/
+#social-media{
+    background:#f8f9fa ;
+    padding: 100px 0;
+}
+#social-media p{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom:30px ;
+}
+.social-icons img{
+    width: 60px;
+    transition: 0.5s;
+}
+.social-icons a:hover img{
+    transform: translateY(-10px);
+}
+/*---------------footer----------------- */
+#footer{
+    background-color: rgb(187, 187, 187);
+    color: #fff;
+}
+#footer p{
+    font-size: 15px;
+    font-style: italic;
+}
+.footer-img{
+    width:100%;
+}
+.footer-box{
+    padding: 20px;
+}
+.footer-box img{
+    width: 120px;
+    margin-top:10px;
+    margin-bottom: 20px;
+}
+.footer-box .bi{
+    margin-right: 8px;
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 2px;
+    background: grey;
+}
+.footer-box .form-control{
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 25px;
+    max-width: 250px;
+
+}
+.footer-box .btn-primary{
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 30px;
+    background: grey;
+}
+hr{
+    background-color: #fff;
+}
+.copyright{
+    margin-bottom:0 ;
+    padding-bottom: 20px;
+    text-align: center;
+}
 @media only screen and (max-width: 768px) {
     .promo-title{
-        font-size: 40px;
+        font-size: 33px;
         word-wrap: break-word;
     }
     #banner p{
         font-size: 20px;
         word-wrap: break-word;
     }
-
+    .bottom-img{
+        margin-bottom: 0;
+      }
   }
