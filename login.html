@@ -135,23 +135,42 @@
 .bottom-img{
   margin-top: 6%;
 }
-
-@media only screen and (max-width: 768px) {
-  #MainForm{
+#emailInp,
+#passwordInp {
+        width: 100%;
+      }
+#MainForm {
+    max-width: 25%;
+    margin: auto;
+  }
+  @media (max-width: 700px){
+ #MainForm{
+    max-width: 100%;
     padding-top: 30px;
   }
+#emailInp,
+#passwordInp {
+        width: 150%;
+        padding: 10px;
+      }
 
-  .bottom-img{
-    margin-top: 55%;
+#MainForm button{
+  width: 100%;
+
+}
+.bottom-img{
+    margin-top: 40%;
   }
-  #forgotpasslabel{
+#forgotpasslabel{
     margin-left: 16%;
     padding: 10px;
+    text-align: center;
   }
-  .loginwith p{
+.loginwith p{
     font-size: 25px;
+    margin-left: 60px;
   }
-  .right button{
+.right button{
     margin: 5px 0;
     margin-left: 40px !important;
   }

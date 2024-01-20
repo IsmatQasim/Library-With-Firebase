@@ -61,14 +61,33 @@
 .bottom-img{
   margin-top:4%;
 }
-
-@media only screen and (max-width: 768px) {
-  #MainForm{
-    padding-top: 20%;
-  }
+#MainForm .btn{
+    width: 50%;
+    padding-left: 10px;
+    margin-left:80px;
   
+  }
+@media (max-width: 700px){
+    #MainForm{
+    max-width: 100%;
+    padding-top: 30px;
+  }
+  #emailInp,
+  #passwordInp,
+  #fnameInp,
+  #lnameInp {
+        width: 150%;
+        padding: 10px;
+      }
+
+  #MainForm .btn{
+    width: 100%;
+    padding-left: 10px;
+    margin-left:29px;
+  
+  }
   .bottom-img{
-    margin-top: 68%;
+    margin-top: 37%;
   
   }
 }
@@ -123,8 +142,8 @@
         <input type="text" class="form-control" id="lnameInp" placeholder="Password">
         <label for="floatingPassword">Last Name</label>
       </div>
-      <button type="submit" class="btn btn-secondary mb-3" style="float:right; ">Create New User</button>
-     <a href="login.html"><button type="button" class="btn btn-secondary me-2" style="float:right;">Sign In</button> </a>
+      <button type="submit" class="btn btn-secondary mb-3"  ">Create New User</button>
+     <a href="login.html"><button type="button" class="btn btn-secondary me-2">Sign In</button> </a>
      
     </form>
 
@@ -139,7 +158,6 @@
         import { getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"; //for authen
 
 
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
 
         const firebaseConfig = {
           apiKey: "AIzaSyA9eG2FBI4G41YQnc3BOaZ_aHYf8h0ex2o",
@@ -153,7 +171,6 @@
       
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
-       const analytics = getAnalytics(app);
         const db = getDatabase();
         const auth = getAuth(app);
 
