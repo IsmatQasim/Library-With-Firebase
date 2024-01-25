@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNook</title>
+    <link rel="icon" href="fav.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<style>
+    body{
+      background-color: rgb(187, 187, 187);
+        background-size: cover;
+        background-repeat: no-repeat;
+        aspect-ratio: 2.5;
+        
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    #nav-bar{
+        position: sticky;
+        top: 0;
+        z-index: 10%;
+    }
+    .navbar-nav{
+        margin-left: 50%;
+    }
+    .navbar{
+      background-color: rgb(187, 187, 187);
+        padding: 0  !important;
+    }
+    .navbar-brand img{
+        /* height: ; */
+        padding-left: 10px;
+    }
+    .navbar-nav li{
+        padding: 0 10px;
+    } 
+    .navbar-nav li a{
+        color: rgb(0, 0, 0) !important;
+        font-weight: 500;
+        font-size: 18px;
+        float: right;
+        text-align: left;
+    }
+    .fa-bars{
+        color: #fff;
+        font-size: 30px !important;
+    }
+    .navbar-toggler{
+        outline:none !important;
+    }
+    .header{
+      font-size: 30px;
+      font-weight: 600;
+    }
+    .right{
+      margin-left: 28%;
+    }
+    .right button{
+    padding:0 8px;
+    margin: 2px 5px;
+    border-radius: 5px;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+  }
+  .social-signin{
+    color: #fff;
+  }
+  .google{
+    background-color: red;
+  }
+  .facebook{
+    background-color: #0a95ff;
+    margin-left: 50px;
+  }
+  .github{
+    background-color: black;
+  }
+.github:hover{
+  transform: translateY(-5px);
+}
+.facebook:hover{
+  transform: translateY(-5px);
+}
+.google:hover{
+  transform: translateY(-5px);
+}
+.fa{
+  padding: 10px;
+  font-size: 16px;
+  width: 8px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa-facebook {
+  background:transparent;
+  color: white;
+}
+
+.fa-google {
+  background: transparent;
+  color: white;
+}
+.fa-github {
+  background: transparent;
+  color: white;
+  width: 15px !important;
+}
+#forgotpasslabel{
+  cursor: pointer;
+  color: rgb(11, 11, 11);
+  padding-left:8px ;
+  font-size: 18px;
+  padding-top: 0;
+  margin-top: 0;
+
+}
+#forgotpasslabel:hover{
+  cursor: pointer;
+  text-decoration: underline 1px black;
+}
+.loginwith p {
+  font-size: 17px;
+  font-weight: 550;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.bottom-img{
+  margin-top: 6%;
+}
+#MainForm{
+  margin-top: 70px;
+}
+@media only screen and (max-width: 767px) {
+  #MainForm{
+    padding-top: 30px;
+  }
+
+  .bottom-img{
+    margin-top: 55%;
+  }
+  #forgotpasslabel{
+    margin-left: 16%;
+    padding: 10px;
+  }
+  .loginwith p{
+    font-size: 25px;
+  }
+  .right button{
+    margin: 5px 0;
+    margin-left: 40px !important;
+  }
+.form-control {
+  width: 150px;
+  height: 240px;
+
+}
+form button{
+  margin-left:25% ;
+}
+}
+
+</style>
+</head>
+<body>
+
+<div>
+    <form id="MainForm" class="w-25 mx-auto .container-fluid">
+        <h2 class="mb-4 text-center header">Log In User</h2>
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="emailInp" placeholder="name@example.com" autocomplete="username">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="passwordInp" placeholder="Password" autocomplete="current-password">
+        <label for="floatingPassword">Password</label>
+      </div>
+  
+      <button type="submit" class="btn btn-secondary mb-3 " style="float:bottom; ">Log In</button>
+     <a href="register.html"><button type="button" class="btn btn-secondary me-3" style="float:left;">Sign Up</button> </a>
+     <label id="forgotpasslabel">Forgot Password</label>
+    </form>
+    
+    <span class="loginwith"> 
+      <p>OR Sign In With <br> </p>
+    </span>
+    <div class="right">
+      <button class="social-signin facebook" id="login-facebook" >Log in with Facebook<a href="#" class="fa fa-facebook" color="white" ></a></button>    
+      <button class="social-signin google" id="login-google">Log in with Google<a href="#" class="fa fa-google"></a></button>
+      <button class="social-signin github" id="login-github">Log in with GitHub<a href="#" class="fa fa-github"></a></button>
+  </div>
+</div>
+    <!-- <img src="wave1.png" class="bottom-img"> -->
+    <script type="module">
+    
+
+    
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getDatabase, get, ref, child  } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"; //for DB
+    import { getAuth, signInWithEmailAndPassword, GoogleAuthProvider, signInWithRedirect ,getRedirectResult, FacebookAuthProvider, GithubAuthProvider, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"; //for authen
+
+
+        const firebaseConfig = {
+          apiKey: "AIzaSyA9eG2FBI4G41YQnc3BOaZ_aHYf8h0ex2o",
+          authDomain: "login-auth-206f9.firebaseapp.com",
+          projectId: "login-auth-206f9",
+          storageBucket: "login-auth-206f9.appspot.com",
+          messagingSenderId: "838275780756",
+          appId: "1:838275780756:web:d5fa4cef41fdb297e76481",
+          measurementId: "G-6KYJMWEKQD"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase();
+        const auth = getAuth(app);
+        const dbref = ref(db);
+
+        let EmailInp = document.getElementById('emailInp');
+        let PassInp = document.getElementById('passwordInp');
+        let MainForm = document.getElementById('MainForm');
+
+        export let SignInUser = evt => {
+            evt.preventDefault();
+
+            signInWithEmailAndPassword(auth, EmailInp.value, PassInp.value)
+            .then((credentials) =>{
+                  get(child(dbref, 'UsersAuthList/' + credentials.user.uid)).then((snapshot)=>{
+                    if(snapshot.exists){
+                        sessionStorage.setItem("user-info", JSON.stringify({
+                            firstname : snapshot.val().firstname,
+                            lastname : snapshot.val().lastname
+                        }))
+                        sessionStorage.setItem("user-creds", JSON.stringify(credentials.user));
+                        window.location.href="homepage.html";
+
+                    }
+                })
+
+            })
+            .catch((error) =>{
+                alert(error);
+                console.log(error);
+                console.log(error);
+            })
+        }
+        const logInG = document.getElementById('login-google');
+        logInG.addEventListener('click', (e) => {
+            const provider = new GoogleAuthProvider();
+            signInWithRedirect(auth, provider);
+        });
+
+        const logInF = document.getElementById("login-facebook");
+        logInF.addEventListener('click', (e) => {
+            const providerF = new FacebookAuthProvider();
+            signInWithRedirect(auth, providerF);
+        });
+        const logInGH = document.getElementById("login-github");
+        logInGH.addEventListener('click', (e) => {
+            const providerGH = new GithubAuthProvider();
+            signInWithRedirect(auth, providerGH);
+        });
+
+        const forgotPass = document.getElementById("forgotpasslabel");
+// Handling password reset
+let ForgotPassword = () =>{
+  sendPasswordResetEmail(auth, EmailInp.value)
+    .then(() => {
+        alert("Password reset email sent!");
+    })
+    .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.error("Error sending password reset email:", errorCode, errorMessage);
+    });
+  }
+    forgotPass.addEventListener('click', ForgotPassword)
+        MainForm.addEventListener('submit', SignInUser);
+      
+      </script>
+</body>
+</html>

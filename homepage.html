@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNook</title>
+    <link rel="icon" href="fav.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+</head>
+<body>
+     <!-- -------------------NavBar section---------------- -->
+
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="logo1.png" ></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ">
+                  <li class="nav-item ">
+                    <a class="nav-link"  href="#top">HOME</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="#services">SERVICES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about-us">ABOUT US</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#footer">CONTACT US</a>
+                  </li>
+                  <button id="signoutbutton">Sign Out</button>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </section>
+    <!-- -------------------Banner section---------------- -->
+  
+     <section id="banner">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                <h1 class="promo-title">Step Into The<br>World Of <span style="color: rgb(255, 255, 255)">Booknook</span></h1>              
+                    <p>
+                    Discover captivating stories and enlightening guides at our library -your gateway to endless worlds of imagination and knowledge. </p>
+                    <button class="main-btn">Add Book</button>
+              </div> 
+               <div class="col-md-6 text-center side-img">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#fff" d="M35.7,-45.8C50.2,-38.5,68.8,-33.5,75.8,-22.2C82.7,-11,77.9,6.4,68.3,18C58.7,29.6,44.4,35.4,32.2,39.9C20,44.3,10,47.3,-3.8,52.6C-17.7,57.9,-35.3,65.4,-48,61.2C-60.7,56.9,-68.4,40.8,-72.7,24.4C-76.9,8,-77.7,-8.8,-74.6,-26C-71.4,-43.2,-64.2,-60.9,-51.1,-68.6C-38,-76.4,-19,-74.2,-4.2,-68.4C10.5,-62.6,21.1,-53,35.7,-45.8Z" transform="translate(100 100)" />
+                  <image x="15" y="20" width="150" height="150" xlink:href="home2.png"  class="img-fluid side-img">
+                </svg>
+               </div>
+          </div>
+      </div>
+  <img src="wave1.png" class="bottom-img">
+   </section> 
+ <!-- -------------------Add book section---------------- -->
+ <section>
+  <h2 style="text-align: center;">Fill The Form To Add The Book</h2>
+  <form id="addBookForm" >
+    <label for="bookName">Name:</label>
+    <input type="text" id="bookName" name="bookName" placeholder="Enter book name" size="30"><br>
+  
+  
+    <label for="bookPrice">Book Price:</label>
+    <input type="number" id="bookPrice" placeholder="Enter price" name="bookPrice" size="30"><br>
+  
+  
+    <label for="bookAuthor">Author:</label>
+    <input type="text" id="bookAuthor" name="bookAuthor" placeholder="Enter Author's name" size="30"><br>
+  
+  
+    <label for="bookImageUrl">Image URL:</label>
+    <input type="text" id="bookImageUrl" name="bookImageUrl" placeholder="Paste the image URL" size="30"><br>
+  
+  
+    <label for="bookCategory">Category:</label>
+    <input type="text" id="bookCategory" name="bookCategory" placeholder="Enter the book category"size="30"><br>
+  
+  
+    <button type="submit">Add Book</button>
+    
+    <h1 class="heading">Explore Our Top Picks</h1>               
+  <ul id="bookList">
+  </ul>
+  </form>
+ </section>
+                    
+<!-- -------------------Services section---------------- -->
+
+
+ <section id="services">
+  <div class="container">
+    <h1 class="title text-center">WHAT WE DO?</h1>
+    <div class="row text-center">
+      <div class="col-md-4 services">
+        <img src="book.png" class="service-img">
+        <h4>Book Borrowing</h4>
+        <p>Libraries facilitate book borrowing, allowing users access to a diverse range of materials for education and leisure reading</p>
+      </div>
+      <div class="col-md-4 services">
+        <img src="info.png" class="service-img">
+        <h4>Information Resources</h4>
+        <p>Libraries offer digital databases, journals, and multimedia resources, supporting research and providing valuable information. </p>
+      </div>
+      <div class="col-md-4 services">
+        <img src="community.png" class="service-img">
+        <h4>Community Engagement</h4>
+        <p>Libraries host educational programs and events, creating inclusive spaces for workshops, lectures, and reading clubs within the community.</p>
+    </div>
+    <div class="text-center">
+      <button type="button" class="btn btn-primary">All Services</button>
+    </div>
+  </div>
+</section>
+    <!-- -------about us ------------>
+    <section id="about-us">
+      <div class="container">
+        <h1 class="title text-center">WHY CHOOSE US</h1>
+        <div class="row">
+          <div class="col-md-6 about-us">
+            <p class="about-title">Why we're different?</p>
+            <ul>
+              <li>Diverse collection of books for borrowing and lending.</li>
+              <li>Supports academic and research needs.</li>
+              <li>Encourages community engagement and lifelong learning.</li>
+              <li>Reading clubs and programs encourage a love for learning.</li>
+              <li>Provide support for research and information queries.</li>
+              <li>Digital databases, journals, and multimedia resources available</li>
+              <li>Includes literature, textbooks, and reference materials.</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <img src="library.png" class="img-fluid img-lib">
+          </div>
+        </div>
+      </div>
+    </section>
+        <!----------------- Social Media Section ----------------->
+        <section id="social-media">
+          <div class="container text-center">
+            <p>FIND US ON SOCIAL MEDIA</p>
+            <div class="social-icons">
+              <a href="#"><img src="facebook-icon.png"></a>
+              <a href="#"><img src="instagram-icon.png"></a>
+              <a href="#"><img src="twitter-icon.png"></a>
+              <a href="#"><img src="snapchat-icon.png"></a>
+              <a href="#"><img src="linkedin-icon.png"></a>
+            </div>
+          </div>
+         </section>
+    
+         <!-- ---------------Footer section--------------- -->
+         <section id="footer">
+          <img src="wave2.png" class="footer-img">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 footer-box">
+                <p>
+                  For library inquiries or assistance, please feel free to contact our 
+                  dedicated library team at [xyz@gmail.com/0345-2091086]. Our staff is ready to 
+                  help with any questions, book recommendations, or information needs you may have.
+                  We look forward to supporting your journey of discovery and learning.
+                  
+                  </p>
+              </div>
+              <div class="col-md-4 footer-box">
+                <p><b>CONTACT US</b></p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                </svg>World Trade Center, Karachi</p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg>0345-2091086</p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                </svg>ismat6812@gmail.com</p>
+              </div>
+              
+              <div class="col-md-4 footer-box">
+                <p><b>SUBSCRIBE NEWSLETTER</b></p>
+                <input type="email" class="form-control" placeholder="Enter your email">
+                <br>
+                <button type="button" class="btn btn-secondary">Subscribe</button>
+              </div>
+            </div>
+            <hr>
+            <p class="copyright " >-Website Developed by <span style="color: black;">Ismat Qasim</span>-</p>
+          </div>
+         </section>
+
+   <script type="module" src="script.js"></script>
+  
+  </body>
